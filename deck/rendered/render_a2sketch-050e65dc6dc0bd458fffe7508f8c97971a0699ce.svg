@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="284pt" height="112" version="1.1" viewBox="0 0 284 84">
+    <g id="surface873">
+        <path fill="#fff" fill-opacity="1" fill-rule="nonzero" stroke="none" d="M97.75 14.61c36.27-9.165 71.82-7.637 125.004-.91 59.707-5.759 121.809 7.585 82.762 20.722 51.601 10.879 1.648 28.746-39.657 25.5 21.579 6.363-41.382 18.586-104.312 7.058-84.91 10.891-112.457 1.24-121.559-8.199-65.144-3.87-21.11-26.125-4.265-29.37C-14.891 19.194 57.227 7.683 97.75 14.608zm0 0" transform="scale(.75)"/>
+        <path fill="none" stroke="#000" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-opacity="1" stroke-width="1.5" d="M74.508 11.405c29.141-5.516 52.881-6.369 95.282-.129M76.193 9.42c23.838-6.946 53.376-4.195 90.301-1.117m0 0c44.297-2.549 91.829 7.605 60.959 16.222M166.815 8.828c42.604-6.288 88.828 3.38 59.672 17.282m0 0c39.07 7.177 2.16 19.531-31.508 20.205m31.977-20.449c37.544 10.28-1.043 19.694-30.55 17.025m0 0c16.833 6.044-33.053 15.858-78.757 6.91m77.81-5.815c16.406 5.274-31.073 14.016-79.854 3.39m0 0c-57.367 10.913-80.871 4.448-85.117-5.361m85.969 3.574c-57.563 14.106-78.193 7.24-84.935-1.796m0 0c-48.234-1.755-17.833-18.733-4.878-21.94m5.64 23.285c-50.353-4.838-15.208-22.694-1.678-25.647m0 0C-6.98 11.628 45.105 4.101 75.65 7.236M28.933 20.449C-7.49 13.066 46.271 1.895 79.351 10.845m-.507.53c-.95-1.916-3.338-.73-4.814-.565m5.121.351c-1.222 1.067-2.51 1.263-4.792.194"/>
+    </g>
+    <defs xmlns="http://www.w3.org/2000/svg">
+        <filter id="dsFilterNoBlur" width="150%" height="150%">
+            <feOffset dx="3" dy="3" in="SourceGraphic" result="offOut"/>
+            <feColorMatrix in="offOut" result="matrixOut" type="matrix" values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0"/>
+            <feBlend in="SourceGraphic" in2="matrixOut" mode="normal"/>
+        </filter>
+        <filter id="dsFilter" width="150%" height="150%">
+            <feOffset dx="3" dy="3" in="SourceGraphic" result="offOut"/>
+            <feColorMatrix in="offOut" result="matrixOut" type="matrix" values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0"/>
+            <feGaussianBlur in="matrixOut" result="blurOut" stdDeviation="3"/>
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal"/>
+        </filter>
+        <marker id="iPointer" fill="#000" markerHeight="7" markerUnits="strokeWidth" markerWidth="8" orient="auto" refX="5" refY="5" viewBox="0 0 10 10">
+            <path d="M10 0v10L0 5z"/>
+        </marker>
+        <marker id="Pointer" fill="#000" markerHeight="7" markerUnits="strokeWidth" markerWidth="8" orient="auto" refX="5" refY="5" viewBox="0 0 10 10">
+            <path d="M0 0l10 5-10 5z"/>
+        </marker>
+    </defs>
+    <defs>
+        <style type="text/css">
+            @font-face{font-family:&quot;xkcd Script&quot;;src:url(./xkcd-script.ttf)}
+        </style>
+    </defs>
+    ??
+    <text id="text0" x="33.075" y="33.6" fill="#000" stroke="none" font-family="xkcd Script" font-size="15">
+        sustainable cloud computing
+    </text>
+</svg>
