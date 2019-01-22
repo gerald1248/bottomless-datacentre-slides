@@ -23,7 +23,7 @@
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/OpenSans-Regular.tff") format('truetype');
+  src: url("fonts/OpenSans-Regular.ttf") format('truetype');
 }
 
 .reveal,
@@ -67,6 +67,10 @@
 
 .tw-colorful .reveal { background: linear-gradient(90deg, #fe17bf 0%, #3364c0 50%, #27bdce 100%); }
 
+.tw-bg-light-blue .reveal { background: #53c6d7; } 
+.tw-bg-middle-blue .reveal { background: #25bdcf; } 
+.tw-bg-dark-blue .reveal { background: #1e8490; } 
+
 .tw-bg-blue .reveal { background: #1974b9; }
 .tw-bg-pink .reveal { background: #ef5ba1; }
 .tw-bg-green .reveal { background: #00aa5b; }
@@ -84,4 +88,19 @@ code, pre, .hljs {
   
 pre.asciinema-terminal {
     background-color: black !important;
+}
+
+.light-on-dark .reveal {
+    color: #fff;
+    text-shadow: 0px 1px #000;
+}
+
+.light-on-dark a {
+    color: #25bdcf;
+    text-shadow: 0px 1px #000;
+}
+
+.light-on-dark a:hover {
+    color: #53c6d7;
+    text-shadow: 0px 1px #000;
 }

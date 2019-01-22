@@ -1,6 +1,6 @@
 ---
-title: Continuous Documentation
-pdf: continuous-documentation.pdf
+title: The bottomless datacentre
+pdf: bottomless-datacentre.pdf
 slideNumber: true
 controls: false
 transition: slide
@@ -13,15 +13,17 @@ asciinema: true
 ```render_a2sketch
 .-----------------------------------.    
 |[c]                                |    
+|                                   |    
 |    sustainable cloud computing    |
-|                                   |
+|                                   |    
+|                                   | 
 '-----------------------------------'    
 
 [c]: {"a2s:type": "cloud", "a2s:delref": true, "fill": "#fff", "fillStyle": "solid"}
 
 ```
 
-# BOA CONSTRICTOR {bgcss=tw-bg-yellow}
+# BOA CONSTRICTOR {bg=#fff44d}
 
 ```render_vegalite
 {
@@ -31,7 +33,7 @@ asciinema: true
             {"Y": 22, "X": 0},
             {"Y": 21, "X": 1},
             {"Y": 20, "X": 2},
-            {"Y": 20, "X": 3},
+            {"Y": 20, "X": 3}, 
             {"Y": 20, "X": 4},
             {"Y": 18, "X": 5},
             {"Y": 21, "X": 6},
@@ -67,111 +69,146 @@ asciinema: true
 }
 ```
 
-# THE MATRIX {bgcss=tw-bg-yellow}
+# COMPUTE-1 AND UP {bg=#53c6d7}
 
-```render_a2sketch
-no need to ask ^
-               |
-               |                     .-------.       
-               |                     |• Docs |
-               |                     '-------'     
-               |                      
-               |                      
-               |
-               |                      
-               |                            • Pairing
-               |                        
-               |
-               |
-               |
-               |                                        • Training
-               |
-               |
-               |
-               '--------------------------------------------------->
-                                   we're serious about handing over
-
+```render_vegalite
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v2.0.json",
+    "data": {
+        "values": [
+            {"Regions": 1, "date": "2006" },
+            {"Regions": 1, "date": "2007" },
+            {"Regions": 2, "date": "2008" },
+            {"Regions": 3, "date": "2009" },
+            {"Regions": 4, "date": "2010" },
+            {"Regions": 7, "date": "2011" },
+            {"Regions": 8, "date": "2012" },
+            {"Regions": 9, "date": "2013" },
+            {"Regions": 10, "date": "2014" },
+            {"Regions": 10, "date": "2015" },
+            {"Regions": 15, "date": "2016" },
+            {"Regions": 15, "date": "2017" },
+            {"Regions": 15, "date": "2018" }
+        ]
+    },
+    "width": 400,
+    "height": 200,
+    "mark": { "type": "line", "color": "#fff44d" },
+    "encoding": {
+        "x": {
+            "timeUnit": "year", "field": "date", "type": "temporal"
+        },
+        "y": {
+            "field": "Regions", "type": "quantitative", "scale": {"domain": [0, 20]}
+        }
+    },
+    "config": {
+        "axis": {
+            "labelFont": "sans-serif",
+            "labelFontSize": 18,
+            "titleFont": "sans-serif",
+            "titleFontSize": 18
+        },
+        "axisX": {
+            "labelAngle": 0
+        }
+    }
+}
 ```
 
-# WORKFLOW {bgcss=tw-bg-yellow}
 
-```render_a2sketch
-#--------------------.           #---------------------.
-|[b]                 |           |                     |
-| Git                |   Push    | Docker build        |
-|                    +---------->+                     |
-|                    |           |                     |
-|                    |           |                     |
-'--------------------#           '----------+----------#
-                                            ^           
-                                            | watch    
-                                 #----------+----------.
-                                 |                     |
-                                 | Flux                |
-                                 |                     |
-                                 |                     |
-                                 |                     |
-                                 '----------+----------#
-                                            |          
-                                            v trigger  
-                                 #----------+----------.            #-----------------.    
-                                 |                     |            |[p]              |
-                                 | Helm                | deploy     | Service         |
-                                 |                     +----------->+                 |
-                                 |                     |            |                 |
-                                 |                     |            |                 |
-                                 '---------------------#            '-----------------#
-[b]: {"fill": "#ef5ba1", "a2s:delref": true, "fillStyle": "solid"}
-[p]: {"fill": "#27bdce", "a2s:delref": true, "fillStyle": "solid"}
+# INCENTIVES {bg=#53c6d7}
+
+$\text{PUE}=\frac{\text{Watts in}}{\text{IT watts}}$
+
+```render_vegalite
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v2.0.json",
+    "data": {
+        "values": [
+            {"PUE": 1.21, "date": "2008"},
+            {"PUE": 1.19, "date": "2009"},
+            {"PUE": 1.18, "date": "2010"},
+            {"PUE": 1.14, "date": "2011"},
+            {"PUE": 1.13, "date": "2012"},  
+            {"PUE": 1.12, "date": "2013"},
+            {"PUE": 1.12, "date": "2014"},
+            {"PUE": 1.12, "date": "2015"},
+            {"PUE": 1.12, "date": "2016"},
+            {"PUE": 1.12, "date": "2017"},
+            {"PUE": 1.11, "date": "2018"}
+        ]
+    },
+    "width": 400,
+    "height": 200,
+    "mark": { "type": "line", "color": "#fff44d" },
+    "encoding": {
+        "x": {
+            "timeUnit": "year", "field": "date", "type": "temporal"
+        },
+        "y": {"field": "PUE", "type": "quantitative", "scale": {"domain": [1.1, 1.3]}}
+    },
+    "config": {
+        "axis": {
+            "labelFont": "sans-serif",
+            "labelFontSize": 18,
+            "titleFont": "sans-serif",
+            "titleFontSize": 24
+        },
+        "axisX": {
+            "labelAngle": 0
+        }
+    }
+}
 ```
 
-# MINIMAL WORKFLOW {bgcss=tw-bg-yellow}
+<small>Power usage effectiveness data by [Google Data Centers](https://www.google.co.uk/about/datacenters/efficiency/internal/)</small>
+
+# ENERGY MIX {bg=#fff}
 
 ```render_a2sketch
-#--------------------.           #---------------------.            #-----------------.    
-|[p]                 |           |                     |            |[s]              |
-| Make               |   build   | HTML                |            | PDF             |
-|                    +---------->+                     +------------+                 |
-|                    |           |                     |            |                 |
-|                    |           |                     |            |                 |
-'--------------------#           '----------+----------#            '-----------------#
-                                            |           
-                                            v update    
-                                 #----------+----------.
-                                 |                     |
-                                 | ConfigMap           |
-                                 |                     |
-                                 |                     |
-                                 |                     |
-                                 '----------+----------#
-                                            |          
-                                            v replace
-                                 #----------+----------.
-                                 |[b]                  |
-                                 | Pod                 |
-                                 |                     |
-                                 |                     |
-                                 |                     |
-                                 '---------------------#
+                                                                                
+utility ^                                                                
+        |                                                                
+        |   • Renewables                                                   
+        |                          .--------------.                
+        |                          |[c]           |                        
+        |                          |• Public Cloud|                        
+        |                          |              |                                
+        |                          '--------------'                                  
+        |                                                              
+        |                                                        
+        |                                                      
+        |                                                             
+        |                                                         
+        |                                                           
+        |                                                                
+        |                                                                 
+        |                                                                 
+        |                                          • Bitcoin        
+        |                                                                  
+        | 
+        '--------------------------------------------------->        
+                                           power consumption         
 
-[s]: {"a2s:type": "document", "a2s:delref": true}
-[b]: {"fill": "#27bdce", "a2s:delref": true, "fillStyle": "solid"}
-[p]: {"fill": "#ef5ba1", "a2s:delref": true, "fillStyle": "solid"}
+[c]: {"a2s:delref":true,"a2s:type":"circle"}
 ```
 
-# SHOESTRING CI {bgcss=tw-bg-purple .light-on-dark}
+# PHOENIX CI {bg=#6a2469 .light-on-dark}
 
 ```dockerfile
-FROM gerald1248/asciidoctor:latest as builder
-ADD . /documents/
-RUN ./test_builder.sh
-RUN ./render.sh
-RUN ./test_output.sh
+FROM golang:1.11.1 as builder
+WORKDIR /go/src/github.com/gerald1248/k8s-network-policy-viewer/
+COPY * ./
+RUN go mod download && go get && go vet go test -v -cover && \
+  go build -o k8s-network-policy-viewer .
 
-FROM centos/httpd-24-centos7:latest
-COPY --from=builder /documents/output /var/www/html
+FROM ubuntu:18.10
+WORKDIR /app/
+EXPOSE 8080
+COPY --from=builder .../k8s-network-policy-viewer /usr/bin/
+USER 1000
+CMD ["k8s-network-policy-viewer", "-s=true"]
 ```
-
-# ON AND ON
 
 # AND ON
