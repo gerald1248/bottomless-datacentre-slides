@@ -87,40 +87,40 @@ asciinema: true
             {"Regions": 2, "date": "2008", "symbol": "AMZN" },
             {"Regions": 3, "date": "2009", "symbol": "AMZN" },
             {"Regions": 4, "date": "2010", "symbol": "AMZN" },
-            {"Regions": 7, "date": "2011", "symbol": "AMZN" },
-            {"Regions": 8, "date": "2012", "symbol": "AMZN" },
-            {"Regions": 9, "date": "2013", "symbol": "AMZN" },
-            {"Regions": 10, "date": "2014", "symbol": "AMZN" },
-            {"Regions": 10, "date": "2015", "symbol": "AMZN" },
-            {"Regions": 15, "date": "2016", "symbol": "AMZN" },
-            {"Regions": 15, "date": "2017", "symbol": "AMZN" },
-            {"Regions": 15, "date": "2018", "symbol": "AMZN" },
+            {"Regions": 8, "date": "2011", "symbol": "AMZN" },
+            {"Regions": 9, "date": "2012", "symbol": "AMZN" },
+            {"Regions": 10, "date": "2013", "symbol": "AMZN" },
+            {"Regions": 11, "date": "2014", "symbol": "AMZN" },
+            {"Regions": 11, "date": "2015", "symbol": "AMZN" },
+            {"Regions": 16, "date": "2016", "symbol": "AMZN" },
+            {"Regions": 16, "date": "2017", "symbol": "AMZN" },
+            {"Regions": 17, "date": "2018", "symbol": "AMZN" },
             {"Regions": 0, "date": "2006", "symbol": "GOOG" },
             {"Regions": 0, "date": "2007", "symbol": "GOOG" },
-            {"Regions": 1, "date": "2008", "symbol": "GOOG" },
-            {"Regions": 2, "date": "2009", "symbol": "GOOG" },
-            {"Regions": 2, "date": "2010", "symbol": "GOOG" },
+            {"Regions": 0, "date": "2008", "symbol": "GOOG" },
+            {"Regions": 0, "date": "2009", "symbol": "GOOG" },
+            {"Regions": 0, "date": "2010", "symbol": "GOOG" },
             {"Regions": 4, "date": "2011", "symbol": "GOOG" },
-            {"Regions": 4, "date": "2012", "symbol": "GOOG" },
-            {"Regions": 4, "date": "2013", "symbol": "GOOG" },
-            {"Regions": 5, "date": "2014", "symbol": "GOOG" },
-            {"Regions": 5, "date": "2015", "symbol": "GOOG" },
-            {"Regions": 7, "date": "2016", "symbol": "GOOG" },
-            {"Regions": 7, "date": "2017", "symbol": "GOOG" },
-            {"Regions": 8, "date": "2018", "symbol": "GOOG" },
+            {"Regions": 6, "date": "2012", "symbol": "GOOG" },
+            {"Regions": 8, "date": "2013", "symbol": "GOOG" },
+            {"Regions": 10, "date": "2014", "symbol": "GOOG" },
+            {"Regions": 12, "date": "2015", "symbol": "GOOG" },
+            {"Regions": 14, "date": "2016", "symbol": "GOOG" },
+            {"Regions": 16, "date": "2017", "symbol": "GOOG" },
+            {"Regions": 18, "date": "2018", "symbol": "GOOG" },
             {"Regions": 0, "date": "2006", "symbol": "MSFT" },
             {"Regions": 0, "date": "2007", "symbol": "MSFT" },
             {"Regions": 0, "date": "2008", "symbol": "MSFT" },
-            {"Regions": 1, "date": "2009", "symbol": "MSFT" },
-            {"Regions": 3, "date": "2010", "symbol": "MSFT" },
-            {"Regions": 5, "date": "2011", "symbol": "MSFT" },
-            {"Regions": 5, "date": "2012", "symbol": "MSFT" },
-            {"Regions": 5, "date": "2013", "symbol": "MSFT" },
-            {"Regions": 6, "date": "2014", "symbol": "MSFT" },
-            {"Regions": 6, "date": "2015", "symbol": "MSFT" },
-            {"Regions": 8, "date": "2016", "symbol": "MSFT" },
-            {"Regions": 8, "date": "2017", "symbol": "MSFT" },
-            {"Regions": 9, "date": "2018", "symbol": "MSFT" }
+            {"Regions": 0, "date": "2009", "symbol": "MSFT" },
+            {"Regions": 2, "date": "2010", "symbol": "MSFT" },
+            {"Regions": 8, "date": "2011", "symbol": "MSFT" },
+            {"Regions": 14, "date": "2012", "symbol": "MSFT" },
+            {"Regions": 20, "date": "2013", "symbol": "MSFT" },
+            {"Regions": 26, "date": "2014", "symbol": "MSFT" },
+            {"Regions": 32, "date": "2015", "symbol": "MSFT" },
+            {"Regions": 39, "date": "2016", "symbol": "MSFT" },
+            {"Regions": 46, "date": "2017", "symbol": "MSFT" },
+            {"Regions": 54, "date": "2018", "symbol": "MSFT" }
         ]
     },
     "width": 400,
@@ -131,7 +131,7 @@ asciinema: true
             "timeUnit": "year", "field": "date", "type": "temporal"
         },
         "y": {
-            "field": "Regions", "type": "quantitative", "scale": {"domain": [0, 50]}
+            "field": "Regions", "type": "quantitative", "scale": {"domain": [0, 90]}
         },
         "color": { "field": "symbol", "type": "nominal", "scale": {
           "domain": [ "AMZN", "GOOG", "MSFT" ],
@@ -152,7 +152,7 @@ asciinema: true
 }
 ```
 
-<!--  -->
+<!-- govcloud 2011 + 2018 -->
 
 <!-- data for GCP
 
