@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="439pt" height="320" version="1.1" viewBox="0 0 439 240">
+    <g id="surface288">
+        <path fill="#fff" fill-opacity="1" fill-rule="nonzero" stroke="none" d="M4.5 18c0-6.668 3.332-10 10-10h547c6.668 0 10 3.332 10 10v252c0 6.668-3.332 10-10 10h-547c-6.668 0-10-3.332-10-10zm0 0" transform="scale(.75)"/>
+        <path fill="none" stroke="#000" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-opacity="1" stroke-width="1.5" d="M5.548 14.303c-1.072-5.51 1.515-7.84 7.762-6.988m-7.088 4.682c-1.98-4.778-.491-7.26 4.46-7.447m.682-.483C154.219 1.895 296.13 1.749 421.456 2.889M9.8 3.835C168.309 1.843 327.89.812 421.393 3.533m-.16.858c4.564.745 6.905 2.898 7.025 6.458M419.51 2.89c6.372 1.938 9.179 5.517 8.414 10.744m1.096-2.051c.67 37.362 2.595 75.744-.162 191.549m-1.973-189.168c2.425 36.492 2.61 75.31 1.605 189.185m.176.337c-.229 4.922-3.331 7.154-9.313 6.703m6.612-6.713c2.502 3.25.902 5.907-4.793 7.978m-1.404-1.479c-111.392 1.934-222.078-.07-407.94-.196m409.288 2.167c-141.925-.87-282.896-1.324-411.137-1.274m1.986 1.372c-5.256-1.02-8.535-3.941-9.829-8.763m6.993 8.414c-4.612 1.107-6.182-.82-4.708-5.79m1.485-.925C2.45 144.228 4.206 82.619 2.71 14.639m.785 190.745c1.881-39.049 2.186-80.18 2.04-191.014"/>
+    </g>
+    <defs xmlns="http://www.w3.org/2000/svg">
+        <filter id="dsFilterNoBlur" width="150%" height="150%">
+            <feOffset dx="3" dy="3" in="SourceGraphic" result="offOut"/>
+            <feColorMatrix in="offOut" result="matrixOut" type="matrix" values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0"/>
+            <feBlend in="SourceGraphic" in2="matrixOut" mode="normal"/>
+        </filter>
+        <filter id="dsFilter" width="150%" height="150%">
+            <feOffset dx="3" dy="3" in="SourceGraphic" result="offOut"/>
+            <feColorMatrix in="offOut" result="matrixOut" type="matrix" values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0"/>
+            <feGaussianBlur in="matrixOut" result="blurOut" stdDeviation="3"/>
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal"/>
+        </filter>
+        <marker id="iPointer-ms9uqge7cv8" fill="#000" markerHeight="7" markerUnits="strokeWidth" markerWidth="8" orient="auto" refX="5" refY="5" viewBox="0 0 10 10">
+            <path d="M10 0v10L0 5z"/>
+        </marker>
+        <marker id="Pointer-ms9uqge7cv8" fill="#000" markerHeight="7" markerUnits="strokeWidth" markerWidth="8" orient="auto" refX="5" refY="5" viewBox="0 0 10 10">
+            <path d="M0 0l10 5-10 5z"/>
+        </marker>
+    </defs>
+    <defs>
+        <style type="text/css">
+            @font-face{font-family:&quot;xkcd Script&quot;;src:url(./xkcd-script.ttf)}
+        </style>
+    </defs>
+    ??
+    <text id="text0" x="120.825" y="21.6" fill="#000" stroke="none" font-family="xkcd Script" font-size="15">
+        barbed wire
+    </text>
+    <text id="text1" x="255.825" y="33.6" fill="#000" stroke="none" font-family="xkcd Script" font-size="15">
+        cooling fans
+    </text>
+    <text id="text2" x="46.575" y="45.6" fill="#000" stroke="none" font-family="xkcd Script" font-size="15">
+        rectangular
+    </text>
+    <text id="text3" x="215.325" y="57.6" fill="#000" stroke="none" font-family="xkcd Script" font-size="15">
+        industrial
+    </text>
+    <text id="text4" x="120.825" y="69.6" fill="#000" stroke="none" font-family="xkcd Script" font-size="15">
+        warehouse
+    </text>
+    <text id="text5" x="282.825" y="81.6" fill="#000" stroke="none" font-family="xkcd Script" font-size="15">
+        heavy
+    </text>
+    <text id="text6" x="201.825" y="93.6" fill="#000" stroke="none" font-family="xkcd Script" font-size="15">
+        security
+    </text>
+    <text id="text7" x="87.075" y="105.6" fill="#000" stroke="none" font-family="xkcd Script" font-size="15">
+        rows of racks
+    </text>
+    <text id="text8" x="228.825" y="117.6" fill="#000" stroke="none" font-family="xkcd Script" font-size="15">
+        artificial light
+    </text>
+    <text id="text9" x="39.825" y="129.6" fill="#000" stroke="none" font-family="xkcd Script" font-size="15">
+        unsightly
+    </text>
+    <text id="text10" x="127.575" y="141.6" fill="#000" stroke="none" font-family="xkcd Script" font-size="15">
+        physical infrastructure
+    </text>
+    <text id="text11" x="80.325" y="153.6" fill="#000" stroke="none" font-family="xkcd Script" font-size="15">
+        box
+    </text>
+    <text id="text12" x="228.825" y="165.6" fill="#000" stroke="none" font-family="xkcd Script" font-size="15">
+        cables
+    </text>
+    <text id="text13" x="114.075" y="177.6" fill="#000" stroke="none" font-family="xkcd Script" font-size="15">
+        metal
+    </text>
+    <text id="text14" x="262.575" y="189.6" fill="#000" stroke="none" font-family="xkcd Script" font-size="15">
+        blinkenlights
+    </text>
+    <text id="text15" x="147.825" y="201.6" fill="#000" stroke="none" font-family="xkcd Script" font-size="15">
+        electric hum
+    </text>
+</svg>

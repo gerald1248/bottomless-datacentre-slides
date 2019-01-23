@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="748" height="400" version="1.1" viewBox="0 0 561 300">
+    <path id="surface280" fill="none" stroke="#000" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-opacity="1" stroke-width="1.5" d="M313.345 77.757c.618-11.716-23.028-24.229-52.641-23.962m52.392 23.218c-.897-10.813-22.319-21.197-50.658-21.422m0 0c-28.758-.164-51.24 7.315-51.53 21.985m49.714-21.795c-25.904.345-48.738 8.763-51.035 22.969m0 0c-.762 14.546 22.042 23.58 52.47 25.775M211.368 79.04c-.829 14.648 18.82 23.174 49.377 22.59m0 0c26.76-.594 50.657-8.49 51.844-20.946m-51.903 21.829c25.694.563 49.236-9.358 48.648-21.255m.38.569c.408-1.155 2.468-2.898 3.657-4.603m-3.68 4.192c.668-3.457 2.631-4.042 3.89-3.946M61.026 18.293c-2.73 52.67-2.548 98.517-2.104 241.653m-.418-239.25c-.44 92.721-1.21 184.866 1.921 240.04m-1.133-2.551c119.654 3.879 240.738 3.679 351.25 3.369m-350.163-2.38c128.917-1.22 258.917-2.322 350.616-.163"/>
+    <defs xmlns="http://www.w3.org/2000/svg">
+        <filter id="dsFilterNoBlur" width="150%" height="150%">
+            <feOffset dx="3" dy="3" in="SourceGraphic" result="offOut"/>
+            <feColorMatrix in="offOut" result="matrixOut" type="matrix" values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0"/>
+            <feBlend in="SourceGraphic" in2="matrixOut" mode="normal"/>
+        </filter>
+        <filter id="dsFilter" width="150%" height="150%">
+            <feOffset dx="3" dy="3" in="SourceGraphic" result="offOut"/>
+            <feColorMatrix in="offOut" result="matrixOut" type="matrix" values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0"/>
+            <feGaussianBlur in="matrixOut" result="blurOut" stdDeviation="3"/>
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal"/>
+        </filter>
+        <marker id="iPointer-0cxas8rsyue" fill="#000" markerHeight="7" markerUnits="strokeWidth" markerWidth="8" orient="auto" refX="5" refY="5" viewBox="0 0 10 10">
+            <path d="M10 0v10L0 5z"/>
+        </marker>
+        <marker id="Pointer-0cxas8rsyue" fill="#000" markerHeight="7" markerUnits="strokeWidth" markerWidth="8" orient="auto" refX="5" refY="5" viewBox="0 0 10 10">
+            <path d="M0 0l10 5-10 5z"/>
+        </marker>
+    </defs>
+    <defs>
+        <style type="text/css">
+            @font-face{font-family:&quot;xkcd Script&quot;;src:url(./xkcd-script.ttf)}
+        </style>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" id="lines-0cxas8rsyue" fill="none" stroke="#000" stroke-width="2" transform="scale(.75)">
+        <g id="group206">
+            <path id="path206" marker-end="url(#Pointer-0cxas8rsyue)" marker-start="url(#iPointer-0cxas8rsyue)" d="M76.5 24v320h468"/>
+        </g>
+    </g>
+    <text id="text3" x="215.325" y="81.6" fill="#000" stroke="none" font-family="xkcd Script" font-size="15">
+        •
+    </text>
+    <text id="text4" x="228.825" y="81.6" fill="#000" stroke="none" font-family="xkcd Script" font-size="15">
+        Public Cloud
+    </text>
+    <text id="text0" x="-.675" y="21.6" fill="#000" font-family="xkcd Script" font-size="15">
+        utility
+    </text>
+    <text id="text1" x="80.325" y="45.6" fill="#000" font-family="xkcd Script" font-size="15">
+        •
+    </text>
+    <text id="text2" x="93.825" y="45.6" fill="#000" font-family="xkcd Script" font-size="15">
+        Public transport
+    </text>
+    <text id="text5" x="296.325" y="153.6" fill="#000" font-family="xkcd Script" font-size="15">
+        •
+    </text>
+    <text id="text6" x="309.825" y="153.6" fill="#000" font-family="xkcd Script" font-size="15">
+        Air travel
+    </text>
+    <text id="text7" x="343.575" y="225.6" fill="#000" font-family="xkcd Script" font-size="15">
+        •
+    </text>
+    <text id="text8" x="357.075" y="225.6" fill="#000" font-family="xkcd Script" font-size="15">
+        Bitcoin
+    </text>
+    <text id="text9" x="289.575" y="273.6" fill="#000" font-family="xkcd Script" font-size="15">
+        power consumption
+    </text>
+</svg>
