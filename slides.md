@@ -289,7 +289,7 @@ CMD ["k8s-network-policy-viewer", "-s=true"]
       |                                                           | 
       #-----------------------------------------------------------#    
 
-[q]: {"a2s:type": "quote-sw", "a2s:delref": true, "fill": "#fff", "fillStyle": "solid"}
+[q]: {"a2s:type": "quote-se", "a2s:delref": true, "fill": "#fff", "fillStyle": "solid"}
 
 ```
 
