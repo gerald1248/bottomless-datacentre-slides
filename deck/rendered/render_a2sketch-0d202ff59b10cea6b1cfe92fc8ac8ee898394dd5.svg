@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="792" height="240" version="1.1" viewBox="0 0 594 180">
+    <g id="surface61">
+        <path fill="#fff" fill-opacity="1" fill-rule="nonzero" stroke="none" d="M4.5 46.398h540v115.204h-378L112.5 200v-38.398H4.5zm0 0" transform="scale(.75)"/>
+        <path fill="none" stroke="#000" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-opacity="1" stroke-width="1.5" d="M5.926 34.263c149.02 7.963 298.691 4.863 401.708-.358M4.014 35.587c90.052-.443 180.266-.372 405.718-.079m-1.319-2.027c.773 15.032 3.281 36.255.173 89.091m.847-88.263c.131 18.595-.317 34.577-.12 88.146m2.173-1.752c-94.643-2.798-190.207-1.327-284.138.161m282.603.727c-99.091-1.357-195.293-2.581-283.269-.062m.721-1.558c-15.38 13.154-28.655 20.724-40.972 31.236m39.346-29.795c-13.55 8.982-29.587 19.594-40.02 28.934m.771 1.88c.833-9.251-.143-15.916-1.998-29.3m1.855 27.982c-1.457-7.842.061-14.016-1.729-29.139m2.857.408c-29.242 1.324-57.739-1.482-84.437.182m82.84-1.68c-31.028 1.688-61.608.402-82.931 1.243m1.237.285c.465-23.81.342-50.438-1.846-87.976m1.623 87.592c-1.271-20.69-1.002-41.863-.117-86.292m-.34-.697c.015.264.58.03.938.352m-1.125-.405c.536.173.957.302 1.218.548"/>
+    </g>
+    <defs xmlns="http://www.w3.org/2000/svg">
+        <filter id="dsFilterNoBlur" width="150%" height="150%">
+            <feOffset dx="3" dy="3" in="SourceGraphic" result="offOut"/>
+            <feColorMatrix in="offOut" result="matrixOut" type="matrix" values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0"/>
+            <feBlend in="SourceGraphic" in2="matrixOut" mode="normal"/>
+        </filter>
+        <filter id="dsFilter" width="150%" height="150%">
+            <feOffset dx="3" dy="3" in="SourceGraphic" result="offOut"/>
+            <feColorMatrix in="offOut" result="matrixOut" type="matrix" values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0"/>
+            <feGaussianBlur in="matrixOut" result="blurOut" stdDeviation="3"/>
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal"/>
+        </filter>
+        <marker id="iPointer-opldokm75i" fill="#000" markerHeight="7" markerUnits="strokeWidth" markerWidth="8" orient="auto" refX="5" refY="5" viewBox="0 0 10 10">
+            <path d="M10 0v10L0 5z"/>
+        </marker>
+        <marker id="Pointer-opldokm75i" fill="#000" markerHeight="7" markerUnits="strokeWidth" markerWidth="8" orient="auto" refX="5" refY="5" viewBox="0 0 10 10">
+            <path d="M0 0l10 5-10 5z"/>
+        </marker>
+    </defs>
+    <defs>
+        <style type="text/css">
+            @font-face{font-family:&quot;xkcd Script&quot;;src:url(./xkcd-script.ttf)}
+        </style>
+    </defs>
+    ??
+    <text id="text0" x="53.325" y="57.6" fill="#000" stroke="none" font-family="xkcd Script" font-size="15">
+        We should forget about small efficiencies,
+    </text>
+    <text id="text1" x="53.325" y="69.6" fill="#000" stroke="none" font-family="xkcd Script" font-size="15">
+        say about 97% of the time:
+    </text>
+    <text id="text2" x="53.325" y="81.6" fill="#000" stroke="none" font-family="xkcd Script" font-size="15">
+        premature optimization is the root of all evil
+    </text>
+    <text id="text3" x="235.575" y="105.6" fill="#000" stroke="none" font-family="xkcd Script" font-size="15">
+        -
+    </text>
+    <text id="text4" x="249.075" y="105.6" fill="#000" stroke="none" font-family="xkcd Script" font-size="15">
+        Donald Knuth (?)
+    </text>
+</svg>
