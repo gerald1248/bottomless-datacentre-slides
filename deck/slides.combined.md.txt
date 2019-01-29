@@ -211,29 +211,33 @@ $\text{PUE}=\frac{\text{Watts in}}{\text{IT watts}}$
                                                                                 
 utility ^                                                                
         |                                                                
-        |   • Public transport                                              
+        |                                                 
         |                      .--------------.                
         |                      |[c]           |                        
         |                      |• Public Cloud|                        
         |                      |              |                                
         |                      '--------------'                                  
-        |                                                              
+        |                                                                      
         |                                                        
-        |                                                      
-        |                                   • Air travel                          
-        |                                                         
-        |                                
+        |                                                               
+        |                             
         |                                                                
+        |                                
+        |                                                                     
         |                                                                   
-        |                                                                 
+        |                                                                      
         |                                          • Bitcoin        
-        |                                                                  
+        |                                                                      
         | 
         #--------------------------------------------------->        
                                            power consumption         
 
 [c]: {"a2s:delref":true,"a2s:type":"circle"}
 ```
+
+# PHOENIX CI {bg=#6a2469 .light-on-dark}
+
+<asciinema-player src="./assets/json/build.json" poster="npt:0:0.5" idle-time-limit=2 speed=0.5 rows=18 font-size="medium" />
 
 # PHOENIX CI {bg=#6a2469 .light-on-dark}
 
@@ -269,7 +273,7 @@ CMD ["k8s-network-policy-viewer", "-s=true"]
 |                                                           | 
 #-----------------------------------------------------------#    
 
-[q]: {"a2s:type": "quote-sw", "a2s:delref": true, "fill": "#fff", "fillStyle": "solid"}
+[q]: {"a2s:type": "quote-sw", "a2s:delref": true, "fill": "#ef5ba1", "fillStyle": "solid"}
 
 ```
 
@@ -281,7 +285,7 @@ CMD ["k8s-network-policy-viewer", "-s=true"]
       |                                                           | 
       |                                                           | 
       |   Program to where the performance puck is going to be,   | 
-      |   not where it has been                                   |                          
+      |   not where it has been                                   |        
       |                                                           |
       |                                  - DHH                    |    
       |                                                           | 
@@ -289,9 +293,48 @@ CMD ["k8s-network-policy-viewer", "-s=true"]
       |                                                           | 
       #-----------------------------------------------------------#    
 
-
-[q]: {"a2s:type": "quote-se", "a2s:delref": true, "fill": "#fff", "fillStyle": "solid"}
+[q]: {"a2s:type": "quote-se", "a2s:delref": true, "fill": "#27bdce", "fillStyle": "solid"}
 
 ```
 
+# MOBILE 
+```render_a2sketch
+.--------------------.    
+|[b]                 |    
+|                    |    
+|                    |
+|                    |    
+|                    |    
+|                    |    
+|                    |    
+|                    | 
+'--------------------'    
+
+[b]: {"a2s:type": "battery-10", "a2s:delref": true, "fill": "#fff", "fillStyle": "solid"}
+```
+
+# CONVEX DISTRIBUTION
+
+```render_a2sketch
+.---------------------------------------.    
+|[c]                                    |    
+| gains/losses                          |    
+|                                       |
+|                                       |
+|                                       |
+|                                       |
+|                                       |
+|                                       |
+|                                       |    
+|                            variable x |    
+|                                       |    
+|                                       |    
+|                                       |    
+|                                       |    
+|                                       | 
+'---------------------------------------'    
+
+[c]: {"a2s:type": "convex", "a2s:delref": true, "fill": "#fff", "fillStyle": "solid"}
+```
+<small>See N.N. Taleb. 2012. <em>Antifragile</em>. NY: Random House, p. 273.</small>
 
