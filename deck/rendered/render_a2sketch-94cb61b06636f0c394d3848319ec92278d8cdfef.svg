@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="230pt" height="208" version="1.1" viewBox="0 0 230 156">
+    <path id="surface420" fill="none" stroke="#fff" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-opacity="1" stroke-width="2" d="M216.094 75.262c2.586-27.645-48.32-54.188-102.961-52.594M218.34 72.613c-4.485-29.55-47.66-51.285-109.602-53.91m0 0C52.461 24.29 6.723 48.363 4.61 76.172m104.559-56.77C50.628 20.004 3.152 43.43 3.324 78.285m0 0c.492 28.14 48.242 50.63 102.645 54.774M3.949 77.96c-1.543 32.277 43.969 50.844 103.922 50.535m0 0c59.309 4.816 102.77-18.2 104.762-48.055m-106.02 49.512c58.735 3.793 105.407-20.652 103.293-52.746m.91-2.45c.946-2.585 3.38-2.343 5.664.938m-5.792-1.039c1.511.371 4.03.758 5.746.27"/>
+    <defs xmlns="http://www.w3.org/2000/svg">
+        <filter id="dsFilterNoBlur" width="150%" height="150%">
+            <feOffset dx="3" dy="3" in="SourceGraphic" result="offOut"/>
+            <feColorMatrix in="offOut" result="matrixOut" type="matrix" values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0"/>
+            <feBlend in="SourceGraphic" in2="matrixOut" mode="normal"/>
+        </filter>
+        <filter id="dsFilter" width="150%" height="150%">
+            <feOffset dx="3" dy="3" in="SourceGraphic" result="offOut"/>
+            <feColorMatrix in="offOut" result="matrixOut" type="matrix" values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0"/>
+            <feGaussianBlur in="matrixOut" result="blurOut" stdDeviation="3"/>
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal"/>
+        </filter>
+        <marker id="iPointer-cze7rdw63zw" fill="#000" markerHeight="7" markerUnits="strokeWidth" markerWidth="8" orient="auto" refX="5" refY="5" viewBox="0 0 10 10">
+            <path d="M10 0v10L0 5z"/>
+        </marker>
+        <marker id="Pointer-cze7rdw63zw" fill="#000" markerHeight="7" markerUnits="strokeWidth" markerWidth="8" orient="auto" refX="5" refY="5" viewBox="0 0 10 10">
+            <path d="M0 0l10 5-10 5z"/>
+        </marker>
+    </defs>
+    <defs>
+        <style type="text/css">
+            @font-face{font-family:&quot;xkcd Script&quot;;src:url(./xkcd-script.ttf)}
+        </style>
+    </defs>
+    ??
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="311pt" height="304" version="1.1" viewBox="0 0 311 228">
+    <g id="surface1">
+        <path fill="#fff" fill-opacity="1" fill-rule="nonzero" stroke="none" d="M4.5 136h360M11.7 8v256m0-102.398S346.5 155.199 364.5 8M11.7 136zm0 0" transform="scale(.75)"/>
+        <path fill="none" stroke="#000" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-opacity="1" stroke-width="1.5" d="M5.926 101.464c98.682 6.217 198.012 3.117 266.708-.36m-268.62 1.684c60.14-.12 120.442-.048 270.718-.08M5.686 6.048c1.029 46.089-1.037 90.679-.6 194.234M6.837 8.563c-.797 53.693-.33 110.716.6 191.887m-2.336-75.52c252.723-9.178 254.194-7.253 267.33-117.834M4.318 125.865c256.51-9.61 252.953-8.64 269.678-122.455M10.008 100.638c-1.706-.209-3.976 1.44-5.016 1.073m4.972-1.835c-2.16 1.051-3.572 1.643-5.667 2.358"/>
+    </g>
+    <defs xmlns="http://www.w3.org/2000/svg">
+        <filter id="dsFilterNoBlur" width="150%" height="150%">
+            <feOffset dx="3" dy="3" in="SourceGraphic" result="offOut"/>
+            <feColorMatrix in="offOut" result="matrixOut" type="matrix" values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0"/>
+            <feBlend in="SourceGraphic" in2="matrixOut" mode="normal"/>
+        </filter>
+        <filter id="dsFilter" width="150%" height="150%">
+            <feOffset dx="3" dy="3" in="SourceGraphic" result="offOut"/>
+            <feColorMatrix in="offOut" result="matrixOut" type="matrix" values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0"/>
+            <feGaussianBlur in="matrixOut" result="blurOut" stdDeviation="3"/>
+            <feBlend in="SourceGraphic" in2="blurOut" mode="normal"/>
+        </filter>
+        <marker id="iPointer-l7c990x1l0q" fill="#000" markerHeight="7" markerUnits="strokeWidth" markerWidth="8" orient="auto" refX="5" refY="5" viewBox="0 0 10 10">
+            <path d="M10 0v10L0 5z"/>
+        </marker>
+        <marker id="Pointer-l7c990x1l0q" fill="#000" markerHeight="7" markerUnits="strokeWidth" markerWidth="8" orient="auto" refX="5" refY="5" viewBox="0 0 10 10">
+            <path d="M0 0l10 5-10 5z"/>
+        </marker>
+    </defs>
+    <defs>
+        <style type="text/css">
+            @font-face{font-family:&quot;xkcd Script&quot;;src:url(./xkcd-script.ttf)}
+        </style>
+    </defs>
+    ??
+    <text id="text0" x="12.825" y="33.6" fill="#000" stroke="none" font-family="xkcd Script" font-size="15">
+        gains
+    </text>
+    <text id="text1" x="201.825" y="129.6" fill="#000" stroke="none" font-family="xkcd Script" font-size="15">
+        variable x
+    </text>
+    <text id="text2" x="12.825" y="177.6" fill="#000" stroke="none" font-family="xkcd Script" font-size="15">
+        losses
+    </text>
+</svg>

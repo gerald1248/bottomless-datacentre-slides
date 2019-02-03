@@ -70,6 +70,7 @@
 .tw-bg-light-blue .reveal { background: #53c6d7; } 
 .tw-bg-middle-blue .reveal { background: #25bdcf; } 
 .tw-bg-dark-blue .reveal { background: #1e8490; } 
+.tw-bg-extra-light-blue .reveal { background: #97dce7; }
 
 .tw-bg-blue .reveal { background: #1974b9; }
 .tw-bg-pink .reveal { background: #ef5ba1; }
@@ -96,12 +97,14 @@ pre.asciinema-terminal {
 }
 
 .light-on-dark a {
-    color: #25bdcf;
+    color: #7cd7e2;
+    /* color: #25bdcf; */
     text-shadow: 0px 1px #000;
 }
 
 .light-on-dark a:hover {
-    color: #53c6d7;
+    color: #97dce7;
+    /* color: #53c6d7; */
     text-shadow: 0px 1px #000;
 }
 

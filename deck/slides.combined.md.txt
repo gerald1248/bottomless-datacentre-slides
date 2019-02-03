@@ -23,9 +23,13 @@ center: true
 [c]: {"a2s:type": "cloud", "a2s:delref": true, "fill": "#fff", "fillStyle": "solid"}
 ```
 
-# NEWSPEAK
+<small>Gerald Schmidt<br/>`@03spirit`</small>
 
-<!-- natural/artificial -->
+<aside class="notes" data-markdown>
+Public cloud vendors are increasing supply so fast it is worth asking how demand manages to keep up. Have existing compute requirements moved from one domain to another, or has it grown very significantly? Is this sustainable?  
+</aside>
+
+# NEWSPEAK
 
 ```render_a2sketch
 .--------------------------------------------------------------.    
@@ -43,7 +47,7 @@ center: true
 |                      silent                                  | 
 |          weightless                                          | 
 |                                   light                      | 
-|                 open                                         | 
+|                 Turner                                       | 
 |                                                              | 
 '--------------------------------------------------------------'    
 
@@ -51,7 +55,7 @@ center: true
 
 ```
 
-# TRANSLATION
+# GROUNDED
 
 ```render_a2sketch
 .--------------------------------------------------------------.
@@ -158,7 +162,7 @@ center: true
 
 <small>Region data based on the <a href="http://feeds.feedburner.com/AmazonWebServicesBlog">AWS</a>, <a href="https://cloudblog.withgoogle.com/products/gcp/rss/">GCP</a> and <a href="https://azurecomcdn.azureedge.net/en-gb/blog/feed/">Azure</a> blogs.<br/>Some missing data points interpolated.</small>
 
-# INCENTIVES {bg=#53c6d7}
+# INCENTIVES {bg=#97dce7}
 
 $\text{PUE}=\frac{\text{Watts in}}{\text{IT watts}}$
 
@@ -205,41 +209,50 @@ $\text{PUE}=\frac{\text{Watts in}}{\text{IT watts}}$
 
 <small>Power usage effectiveness data by [Google Data Centers](https://www.google.co.uk/about/datacenters/efficiency/internal/)</small>
 
-# ENERGY MIX {bg=#fff}
+# MORE DATA MORE PROBLEMS
+
+<aside class="notes" data-markdown>
+Total cost of data ownership.
+</aside>
+
+# I SHOT THE SCREEN
 
 ```render_a2sketch
-                                                                                
-utility ^                                                                
-        |                                                                
-        |                                                 
-        |                      .--------------.                
-        |                      |[c]           |                        
-        |                      |• Public Cloud|                        
-        |                      |              |                                
-        |                      '--------------'                                  
-        |                                                                      
-        |                                                        
-        |                                                               
-        |                             
-        |                                                                
-        |                                
-        |                                                                     
-        |                                                                   
-        |                                                                      
-        |                                          • Bitcoin        
-        |                                                                      
-        | 
-        #--------------------------------------------------->        
-                                           power consumption         
+#---------# #---------# #---------# #---------#    
+|[c]      | |[c]      | |[c]      | |[c]      |
+|         | |         | |         | |         |
+|         | |         | |         | |         |
+|         | |         | |         | |         |
+#---------# #---------# #---------# #---------#
 
-[c]: {"a2s:delref":true,"a2s:type":"circle"}
+#---------# #---------# #---------# #---------#    
+|[c]      | |[c]      | |[cp]     | |[c]      |
+|         | |         | |         | |         |
+|         | |         | |         | |         |
+|         | |         | |         | |         |
+#---------# #---------# #---------# #---------#
+
+#---------# #---------# #---------# #---------#    
+|[c]      | |[c]      | |[c]      | |[c]      |
+|         | |         | |         | |         |
+|         | |         | |         | |         |
+|         | |         | |         | |         |
+#---------# #---------# #---------# #---------#
+
+[c]: {"a2s:type": "computer", "a2s:delref": true, "fill": "#fff", "fillStyle": "solid"}
+[cp]: {"a2s:type": "computer", "a2s:delref": true, "fill": "#ef5ba1", "fillStyle": "solid"}
+
 ```
+
+<aside class="notes" data-markdown>
+UI tests are among the most fragile and most resource intensive
+</aside>
 
 # PHOENIX CI {bg=#6a2469 .light-on-dark}
 
 <asciinema-player src="./assets/json/build.json" poster="npt:0:0.5" idle-time-limit=2 speed=0.5 rows=18 font-size="medium" />
 
-# PHOENIX CI {bg=#6a2469 .light-on-dark}
+# RECIPE {bg=#6a2469 .light-on-dark}
 
 ```dockerfile
 FROM golang:1.11.1 as builder
@@ -297,28 +310,78 @@ CMD ["k8s-network-policy-viewer", "-s=true"]
 
 ```
 
-# MOBILE 
-```render_a2sketch
-.--------------------.    
-|[b]                 |    
-|                    |    
-|                    |
-|                    |    
-|                    |    
-|                    |    
-|                    |    
-|                    | 
-'--------------------'    
+# MANDELBROT {bg=#fff44d}
 
-[b]: {"a2s:type": "battery-10", "a2s:delref": true, "fill": "#fff", "fillStyle": "solid"}
+```render_vegalite
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v2.0.json",
+    "data": {
+        "values": [
+            {"language": "C++", "seconds": 1.51},
+            {"language": "C", "seconds": 1.64},
+            {"language": "C# .NET Core", "seconds": 11.64},
+            {"language": "Rust", "seconds": 1.74},
+            {"language": "Go", "seconds": 5.47},
+            {"language": "Java", "seconds": 6.96},
+            {"language": "Node.js", "seconds": 18.18},
+            {"language": "Erlang", "seconds": 110.80},
+            {"language": "PHP", "seconds": 118.28},
+            {"language": "Lua", "seconds": 261.54},
+            {"language": "Python 3", "seconds": 263.04},
+            {"language": "JRuby", "seconds": 300},
+            {"language": "Ruby", "seconds": 420},
+            {"language": "Perl", "seconds": 660}  
+        ]
+    },
+    "width": 800,
+    "height": 400,
+    "mark": { "type": "bar" },
+    "encoding": {
+        "x": {
+            "field": "seconds",
+            "type": "quantitative",
+            "scale": {
+                "domain": [0.0, 700.0]
+            }
+        },
+        "y": {
+            "field": "language",
+            "type": "ordinal"
+        },
+        "color": {
+            "field": "seconds",
+            "aggregate": "max",
+            "type": "quantitative",
+            "legend": {
+                "title": null
+            },
+            "scale": {
+              "range": [ "#27bdce", "#3364c0", "#fe17bf" ]
+            }
+        }
+    },
+    "config": {
+        "axis": {
+            "labelFont": "sans-serif",
+            "labelFontSize": 18,
+            "titleFont": "sans-serif",
+            "titleFontSize": 18 
+        },
+        "axisX": {
+            "labelAngle": 0
+        }
+    }
+}
 ```
+
+<small>Source: [benchmarksgame](https://benchmarksgame-team.pages.debian.net/benchmarksgame/performance/mandelbrot.html)</small>
 
 # CONVEX DISTRIBUTION
 
 ```render_a2sketch
 .---------------------------------------.    
 |[c]                                    |    
-| gains/losses                          |    
+| gains                                 |    
 |                                       |
 |                                       |
 |                                       |
@@ -326,15 +389,103 @@ CMD ["k8s-network-policy-viewer", "-s=true"]
 |                                       |
 |                                       |
 |                                       |    
-|                            variable x |    
+|                             variable x|    
 |                                       |    
 |                                       |    
 |                                       |    
-|                                       |    
+| losses                                |    
 |                                       | 
 '---------------------------------------'    
 
 [c]: {"a2s:type": "convex", "a2s:delref": true, "fill": "#fff", "fillStyle": "solid"}
 ```
-<small>See N.N. Taleb. 2012. <em>Antifragile</em>. NY: Random House, p. 273.</small>
+<small>Adapted from N.N. Taleb. 2012. <em>Antifragile</em>. NY: Random House, p. 273.</small>
+
+# MOBILE 
+```render_a2sketch
+.----------------------.    
+|[b]                   |    
+|                      |    
+|                      |
+|                      |    
+|                      |    
+|                      |    
+|                      |    
+|                      |    
+|                      |    
+|                      |    
+|                      | 
+'----------------------'    
+
+[b]: {"a2s:type": "battery-10", "a2s:delref": true, "fill": "#fff", "fillStyle": "solid"}
+```
+
+# EMBEDDED
+```render_a2sketch
+.----------------------.    
+|[b]                   |    
+|                      |    
+|                      |
+|                      |    
+|                      |    
+|                      |    
+|                      |    
+|                      |    
+|                      |    
+|                      |    
+|                      | 
+'----------------------'    
+
+[b]: {"a2s:type": "calendar", "a2s:delref": true, "fill": "#fff", "fillStyle": "solid"}
+```
+
+# PAY FOR WHAT YOU USE
+```render_a2sketch
+.---------------------------.    
+|[c]                        |    
+|                           |    
+|                           |
+|                           |    
+|                           |    
+|                           |    
+|                           |    
+|                           |    
+|                           | 
+'---------------------------'    
+
+[c]: {"a2s:type": "coins", "a2s:delref": true, "fill": "#fff", "fillStyle": "solid"}
+```
+
+# EVERYTHING COUNTS IN LARGE AMOUNTS {bg=#6a2469 .light-on-dark}
+
+```render_a2sketch
+.---------------------------.    
+|[g]                        |    
+|                           |    
+|                           |
+|                           |    
+|                           |    
+|                           |    
+|                           |    
+|                           |    
+|                           | 
+'---------------------------'    
+
+[g]: {"a2s:type": "globe", "a2s:delref": true, "stroke": "#fff", "fill": "#fff", "fillStyle": "solid"}
+```
+
+<small>
+The myth of infinite supply carries many costs<br/>
+It's up to us to bring compute consumption under control<br/>
+The big three have no incentive to promote compute sustainability
+</small>
+
+# THANK YOU {bgcss=tw-colorful .light-on-dark}
+
+<small>Slides built with <a href="https://github.com/arnehilmann/markdeck">Markdeck</a> by Arne Hilmann<br/>
+Artwork courtesy of <a href="">a2s</a>, <a href="">a2sketch</a> and <a href="">Vega-Lite</a><br/>
+Typography <a href="">OpenSans</a> and <a href="">xkcd-script</a><br/>
+Source on <a href="https://github.com/gerald1248/bottomless-datacentre-slides">Github</a></small>
+<br/><br/>
+<img src="assets/images/ThoughtWorks_logo_white.png" alt="ThoughtWorks logo" width="25%"/>
 
