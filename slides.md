@@ -185,8 +185,8 @@ $\text{PUE}=\frac{\text{Watts in}}{\text{IT watts}}$
             {"PUE": 1.18, "date": "2010"},
             {"PUE": 1.14, "date": "2011"},
             {"PUE": 1.13, "date": "2012"},  
-            {"PUE": 1.12, "date": "2013"},
             {"PUE": 1.12, "date": "2014"},
+            {"PUE": 1.12, "date": "2013"},
             {"PUE": 1.12, "date": "2015"},
             {"PUE": 1.12, "date": "2016"},
             {"PUE": 1.12, "date": "2017"},
@@ -218,11 +218,11 @@ $\text{PUE}=\frac{\text{Watts in}}{\text{IT watts}}$
 
 <small>Power usage effectiveness data by [Google Data Centers](https://www.google.co.uk/about/datacenters/efficiency/internal/)</small>
 
-# ENERGY MIX
+# INFINITE BEANSTALK
 
 ```render_a2sketch
-utility ^
-        |   • SETI
+        ^
+ utility|   • SETI
         |
         |
         |                                
@@ -240,18 +240,12 @@ utility ^
         |
         |                                          • Bitcoin
         |
-        |
+        |    
         #--------------------------------------------------->
                                            power consumption
 
 [c]: {"a2s:delref":true,"a2s:type":"circle"}
 ```
-
-# MORE DATA MORE PROBLEMS
-
-<aside class="notes" data-markdown>
-Total cost of data ownership.
-</aside>
 
 # 1,000,000 SCREENSHOTS
 
@@ -307,6 +301,62 @@ USER 1000
 CMD ["k8s-network-policy-viewer", "-s=true"]
 ```
 
+# TOTAL COST OF HOARDING
+
+```render_a2sketch
+                               
+                              ^ Jackpot
+                              |
+                                    
+       #-------------------------------------------.    
+   cost|[c]                   compute              |    
+       |                                           |    
+       |                                           |
+       |                                           |
+       |                                           |
+       |                                           |
+       |                                           |
+       |                                           |
+       |                                           |
+       |                                   storage |
+       |                                           |
+       |                                           |    
+       |                                           |    
+       |                                           |    
+       |                                           |    
+       |                                           |    
+       |                                           |    
+       |                                           | 
+       '-------------------------------------------#    
+                                               data    
+
+[c]: {"a2s:type": "data", "a2s:delref": true, "fill": "#fff", "fillStyle": "solid"}
+```
+
+<aside class="notes" data-markdown>
+Total cost of data ownership.
+</aside>
+
+# THE VIEW FROM LE MANS
+
+```render_a2sketch
+      #-----------------------------------------------------------#    
+      |[q]                                                        |    
+      |                                                           | 
+      |                                                           | 
+      |   Program to where the performance puck is going to be,   | 
+      |   not where it has been                                   |        
+      |                                                           |
+      |                                  - DHH                    |    
+      |                                                           | 
+      |                                                           | 
+      |                                                           | 
+      #-----------------------------------------------------------#    
+
+[q]: {"a2s:type": "quote-sw", "a2s:delref": true, "fill": "#27bdce", "fillStyle": "solid"}
+
+```
+
 # THE MISSING THREE PER CENT
 
 ```render_a2sketch
@@ -324,29 +374,34 @@ CMD ["k8s-network-policy-viewer", "-s=true"]
 |                                                           | 
 #-----------------------------------------------------------#    
 
-[q]: {"a2s:type": "quote-sw", "a2s:delref": true, "fill": "#ef5ba1", "fillStyle": "solid"}
+[q]: {"a2s:type": "quote-se", "a2s:delref": true, "fill": "#ef5ba1", "fillStyle": "solid"}
 
 ```
 
-# THE VIEW FROM LEMANS
+# CONVEX DISTRIBUTION
 
 ```render_a2sketch
-      #-----------------------------------------------------------#    
-      |[q]                                                        |    
-      |                                                           | 
-      |                                                           | 
-      |   Program to where the performance puck is going to be,   | 
-      |   not where it has been                                   |        
-      |                                                           |
-      |                                  - DHH                    |    
-      |                                                           | 
-      |                                                           | 
-      |                                                           | 
-      #-----------------------------------------------------------#    
+.---------------------------------------.    
+|[c]                                    |    
+| gains                                 |    
+|                                       |
+|                                       |
+|                                       |
+|                                       |
+|                                       |
+|                                       |
+|                                       |    
+|                             variable x|    
+|                                       |    
+|                                       |    
+|                                       |    
+| losses                                |    
+|                                       | 
+'---------------------------------------'    
 
-[q]: {"a2s:type": "quote-se", "a2s:delref": true, "fill": "#27bdce", "fillStyle": "solid"}
-
+[c]: {"a2s:type": "convex", "a2s:delref": true, "fill": "#fff", "fillStyle": "solid"}
 ```
+<small>Adapted from N.N. Taleb. 2012. <em>Antifragile</em>. NY: Random House, p. 273.</small>
 
 # MANDELBROT {bg=#fff44d}
 
@@ -367,19 +422,18 @@ CMD ["k8s-network-policy-viewer", "-s=true"]
             {"language": "Lua", "seconds": 261.54},
             {"language": "Python 3", "seconds": 263.04},
             {"language": "JRuby", "seconds": 300},
-            {"language": "Ruby", "seconds": 420},
-            {"language": "Perl", "seconds": 660}  
+            {"language": "Ruby", "seconds": 420}  
         ]
     },
-    "width": 800,
-    "height": 400,
+    "width": 600,
+    "height": 300,
     "mark": { "type": "bar" },
     "encoding": {
         "x": {
             "field": "seconds",
             "type": "quantitative",
             "scale": {
-                "domain": [0.0, 700.0]
+                "domain": [0.0, 450.0]
             }
         },
         "y": {
@@ -413,31 +467,6 @@ CMD ["k8s-network-policy-viewer", "-s=true"]
 ```
 
 <small>Source: [benchmarksgame](https://benchmarksgame-team.pages.debian.net/benchmarksgame/performance/mandelbrot.html)</small>
-
-# CONVEX DISTRIBUTION
-
-```render_a2sketch
-.---------------------------------------.    
-|[c]                                    |    
-| gains                                 |    
-|                                       |
-|                                       |
-|                                       |
-|                                       |
-|                                       |
-|                                       |
-|                                       |    
-|                             variable x|    
-|                                       |    
-|                                       |    
-|                                       |    
-| losses                                |    
-|                                       | 
-'---------------------------------------'    
-
-[c]: {"a2s:type": "convex", "a2s:delref": true, "fill": "#fff", "fillStyle": "solid"}
-```
-<small>Adapted from N.N. Taleb. 2012. <em>Antifragile</em>. NY: Random House, p. 273.</small>
 
 # MOBILE 
 ```render_a2sketch
@@ -494,36 +523,31 @@ CMD ["k8s-network-policy-viewer", "-s=true"]
 [c]: {"a2s:type": "coins", "a2s:delref": true, "fill": "#fff", "fillStyle": "solid"}
 ```
 
-# {bg=#6a2469 .light-on-dark}
+# MAXIMISE THE WORK NOT DONE {bg=#6a2469 .light-on-dark}
 
 ```render_a2sketch
-.---------------------------.    
-|[g]                        |    
-|                           |    
-|                           |
-|                           |    
-|                           |    
-|                           |    
-|                           |    
-|                           |    
-|                           | 
-'---------------------------'    
+#-----------------------------------#    
+|[g]                                |    
+|                                   |    
+|                                   |
+|                                   |    
+|                                   |    
+|                                   |    
+|                                   |    
+|                                   |    
+|                                   |    
+|                                   |    
+|                                   | 
+#-----------------------------------#    
 
 [g]: {"a2s:type": "globe", "a2s:delref": true, "stroke": "#fff", "fill": "#fff", "fillStyle": "solid"}
 ```
 
-<small>
-The myth of infinite supply carries huge costs<br/>
-It's up to us to bring compute consumption under control<br/>
-The big three have no incentive to promote compute sustainability<br/>
-Everything counts in large amounts
-</small>
-
 # THANK YOU {bgcss=tw-colorful .light-on-dark}
 
-<small>Slides built with <a href="https://github.com/arnehilmann/markdeck">Markdeck</a> by Arne Hilmann<br/>
-Artwork courtesy of <a href="">a2s</a>, <a href="">a2sketch</a> and <a href="">Vega-Lite</a><br/>
-Fonts <a href="">OpenSans</a> and <a href="">xkcd-script</a><br/>
-<a href="https://github.com/gerald1248/bottomless-datacentre-slides">github.com/gerald1248/bottomless-datacentre-slides</a></small>
+<small>Slides built with <a href="https://github.com/arnehilmann/markdeck">Markdeck</a><br/>
+Artwork <a href="https://github.com/dhobsd/asciitosvg">a2s</a>, <a href="https://github.com/arnehilmann/a2sketch">a2sketch</a> and <a href="">Vega-Lite</a><br/>
+Typography <a href="https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans">OpenSans</a> and <a href="https://github.com/ipython/xkcd-font">xkcd-script</a><br/>
+Source <a href="https://github.com/gerald1248/bottomless-datacentre-slides">github.com/gerald1248/bottomless-datacentre-slides</a></small>
 <br/><br/>
 <img src="assets/images/ThoughtWorks_logo_white.png" alt="ThoughtWorks logo" width="25%"/>
