@@ -43,10 +43,10 @@ Public cloud vendors are increasing supply so fast it is worth asking how demand
 |                     Wordsworth                               | 
 |              soft                                            | 
 |                           sunlight                           | 
-|                                        feathery              | 
+|                                        Eloi                  | 
 |                      silent                                  | 
 |          weightless                                          | 
-|                                   light                      | 
+|                                   feathery                   | 
 |                 Turner                                       | 
 |                                                              | 
 '--------------------------------------------------------------'    
@@ -55,16 +55,21 @@ Public cloud vendors are increasing supply so fast it is worth asking how demand
 
 ```
 
-# GROUNDED
+<aside class="notes" data-markdown>
+The cloud is inspired marketing. Cognitive dissonance doesn't begin to cover it: each of these positive associations can be shown to be wholly inapplicable to real-world datacentres.
+</aside>
+
+# GROUNDED {bg=#000 .light-on-dark}
 
 ```render_a2sketch
-.--------------------------------------------------------------.
-|[s]              barbed wire                                  |
+#--------------------------------------------------------------#
+|[s]                                                           |
+|                 barbed wire                                  |
 |                                     cooling fans             |
 |      rectangular                                             |
 |                               industrial                     |
 |                 warehouse                                    |
-|                                         heavy                |
+|                                         Morlocks             |
 |                             security                         |
 |            rows of racks                                     |
 |                                 artificial light             |
@@ -75,11 +80,15 @@ Public cloud vendors are increasing supply so fast it is worth asking how demand
 |                metal                                         |
 |                                      blinkenlights           |
 |                     electric hum                             |
-'--------------------------------------------------------------'
+#--------------------------------------------------------------#
 
-[s]: {"a2s:delref": true, "fill": "#fff", "fillStyle": "solid"}
+[s]: {"a2s:delref": true, "fill": "#000", "fillStyle": "solid", "stroke": "#fff"}
 
 ```
+<aside class="notes" data-markdown>
+Here is a more realistic description of cloud datacentres.
+</aside>
+
 # COMPUTE-1 AND UP {bg=#fff44d}
 
 ```render_vegalite
@@ -186,7 +195,7 @@ $\text{PUE}=\frac{\text{Watts in}}{\text{IT watts}}$
     },
     "width": 400,
     "height": 200,
-    "mark": { "type": "line", "color": "#fff44d" },
+    "mark": { "type": "line", "color": "#ef5ba1" },
     "encoding": {
         "x": {
             "timeUnit": "year", "field": "date", "type": "temporal"
@@ -209,13 +218,42 @@ $\text{PUE}=\frac{\text{Watts in}}{\text{IT watts}}$
 
 <small>Power usage effectiveness data by [Google Data Centers](https://www.google.co.uk/about/datacenters/efficiency/internal/)</small>
 
+# ENERGY MIX
+
+```render_a2sketch
+utility ^
+        |   • SETI
+        |
+        |
+        |                                
+        |                      .-----------------------.
+        |                      |[c]                    |
+        |                      |• Elastic Beanstalk app|
+        |                      |                       |
+        |                      '-----------------------'
+        |
+        |
+        |
+        |
+        |
+        |
+        |
+        |                                          • Bitcoin
+        |
+        |
+        #--------------------------------------------------->
+                                           power consumption
+
+[c]: {"a2s:delref":true,"a2s:type":"circle"}
+```
+
 # MORE DATA MORE PROBLEMS
 
 <aside class="notes" data-markdown>
 Total cost of data ownership.
 </aside>
 
-# I SHOT THE SCREEN
+# 1,000,000 SCREENSHOTS
 
 ```render_a2sketch
 #---------# #---------# #---------# #---------#    
@@ -456,7 +494,7 @@ CMD ["k8s-network-policy-viewer", "-s=true"]
 [c]: {"a2s:type": "coins", "a2s:delref": true, "fill": "#fff", "fillStyle": "solid"}
 ```
 
-# EVERYTHING COUNTS IN LARGE AMOUNTS {bg=#6a2469 .light-on-dark}
+# {bg=#6a2469 .light-on-dark}
 
 ```render_a2sketch
 .---------------------------.    
@@ -475,16 +513,17 @@ CMD ["k8s-network-policy-viewer", "-s=true"]
 ```
 
 <small>
-The myth of infinite supply carries many costs<br/>
+The myth of infinite supply carries huge costs<br/>
 It's up to us to bring compute consumption under control<br/>
-The big three have no incentive to promote compute sustainability
+The big three have no incentive to promote compute sustainability<br/>
+Everything counts in large amounts
 </small>
 
 # THANK YOU {bgcss=tw-colorful .light-on-dark}
 
 <small>Slides built with <a href="https://github.com/arnehilmann/markdeck">Markdeck</a> by Arne Hilmann<br/>
 Artwork courtesy of <a href="">a2s</a>, <a href="">a2sketch</a> and <a href="">Vega-Lite</a><br/>
-Typography <a href="">OpenSans</a> and <a href="">xkcd-script</a><br/>
-Source on <a href="https://github.com/gerald1248/bottomless-datacentre-slides">Github</a></small>
+Fonts <a href="">OpenSans</a> and <a href="">xkcd-script</a><br/>
+<a href="https://github.com/gerald1248/bottomless-datacentre-slides">github.com/gerald1248/bottomless-datacentre-slides</a></small>
 <br/><br/>
 <img src="assets/images/ThoughtWorks_logo_white.png" alt="ThoughtWorks logo" width="25%"/>
