@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="311pt" height="304" version="1.1" viewBox="0 0 311 228">
-    <g id="surface41">
-        <path fill="#fff" fill-opacity="1" fill-rule="nonzero" stroke="none" d="M4.5 136h360M11.7 8v256m0-102.398S346.5 155.199 364.5 8M4.5 136zm0 0" transform="scale(.75)"/>
-        <path fill="none" stroke="#000" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-opacity="1" stroke-width="1.5" d="M5.926 101.464c98.682 6.217 198.012 3.117 266.708-.36m-268.62 1.684c60.14-.12 120.442-.048 270.718-.08M5.686 6.048c1.029 46.089-1.037 90.679-.6 194.234M6.837 8.563c-.797 53.693-.33 110.716.6 191.887m-2.336-75.52c252.723-9.178 254.194-7.253 267.33-117.834M4.318 125.865c256.51-9.61 252.953-8.64 269.678-122.455M4.383 100.385c.163.411.1 1.557.36 1.761m-.378-2.07c-.056.905.19 1.596.094 2.284"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="468" height="304" version="1.1" viewBox="0 0 351 228">
+    <g id="surface105">
+        <path fill="#fff" fill-opacity="1" fill-rule="nonzero" stroke="none" d="M58.5 136h360M65.7 8v256m0-102.398S400.5 155.199 418.5 8m-360 128zm0 0" transform="scale(.75)"/>
+        <path fill="none" stroke="#000" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-opacity="1" stroke-width="1.5" d="M46.427 101.464c98.68 6.74 198.012 3.642 266.707-.36m-268.62 1.684c60.14-.217 120.442-.144 270.718-.08M46.186 6.049c1.029 45.611-1.037 90.201-.6 194.234M47.339 8.563c-.797 53.186-.331 110.21.6 191.887m-2.337-75.52c252.724-9.178 254.194-7.253 267.33-117.834M44.818 125.865c256.51-9.61 252.953-8.64 269.678-122.455M45.683 97.995c-.012 1.155-.513 3.627-.243 3.809m.202-4.476c-.458 2.267-.279 3.76-.81 4.933"/>
     </g>
     <defs xmlns="http://www.w3.org/2000/svg">
         <filter id="dsFilterNoBlur" width="150%" height="150%">
@@ -28,13 +28,13 @@
         </style>
     </defs>
     ??
-    <text id="text0" x="12.825" y="33.6" fill="#000" stroke="none" font-family="xkcd Script" font-size="15">
-        gains
-    </text>
-    <text id="text1" x="201.825" y="129.6" fill="#000" stroke="none" font-family="xkcd Script" font-size="15">
+    <text id="text1" x="242.325" y="129.6" fill="#000" stroke="none" font-family="xkcd Script" font-size="15">
         variable x
     </text>
-    <text id="text2" x="12.825" y="177.6" fill="#000" stroke="none" font-family="xkcd Script" font-size="15">
+    <text id="text0" x="6.075" y="21.6" fill="#000" font-family="xkcd Script" font-size="15">
+        gains
+    </text>
+    <text id="text2" x="-.675" y="189.6" fill="#000" font-family="xkcd Script" font-size="15">
         losses
     </text>
 </svg>

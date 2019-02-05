@@ -54,7 +54,7 @@ Public cloud vendors are increasing supply so fast it is worth asking how demand
 ```
 
 <aside class="notes" data-markdown>
-The cloud is inspired marketing. Cognitive dissonance doesn't begin to cover it: each of these positive associations can be shown to be wholly inapplicable to the real-world datacentres that collectively make up the cloud.
+The cloud is inspired marketing. Every one of these associations is wholly unsuited to the real-world datacentres that collectively make up the cloud.
 </aside>
 
 # GROUNDED {bg=#000 .light-on-dark}
@@ -84,7 +84,7 @@ The cloud is inspired marketing. Cognitive dissonance doesn't begin to cover it:
 
 ```
 <aside class="notes" data-markdown>
-Here is a more realistic description of cloud datacentres.
+Here is a better description of cloud datacentres. Miles of cables pin these fortified data warehouses to the ground. 
 </aside>
 
 # COMPUTE-1 AND UP {bg=#fff44d}
@@ -170,7 +170,7 @@ Here is a more realistic description of cloud datacentres.
 <small>Region data based on the <a href="http://feeds.feedburner.com/AmazonWebServicesBlog">AWS</a>, <a href="https://cloudblog.withgoogle.com/products/gcp/rss/">GCP</a> and <a href="https://azurecomcdn.azureedge.net/en-gb/blog/feed/">Azure</a> blogs.<br/>Some missing data points interpolated.</small>
 
 <aside class="notes" data-markdown>
-Note that the growth of AWS is in no way hindered by the rapid rise of Microsoft Azure and Google Compute Cloud. See especially AWS's explosive growth in the 2015/2016.
+Note that the growth of AWS is in no way hindered by the rapid rise of Microsoft Azure and Google Compute Cloud. See especially AWS's explosive growth in the period 2015—2016.
 </aside>
 
 # INCENTIVES {bg=#97dce7}
@@ -254,6 +254,7 @@ The power usage effectiveness of these datacentres is nothing short of miraculou
 ```
 
 <aside class="notes">
+Now we are able to scale our application with virtually no limit beyond our ability to pay, how do we judge the value of the application we've built?
 </aside>
 
 # 1,000,000 SCREENSHOTS
@@ -293,6 +294,10 @@ Why single out screenshots? Browser UI tests are among the most fragile, but als
 
 <asciinema-player src="./assets/json/build.json" poster="npt:0:0.5" idle-time-limit=2 speed=0.5 rows=18 font-size="medium" />
 
+<aside class="notes" data-markdown>
+Process practices such as CI must not be exempt from scrutiny. Isolation and repeatability are laudable goals, but do they justify the absence of caching from much of our build and test activity?
+</aside>
+
 # RECIPE {bg=#6a2469 .light-on-dark}
 
 ```dockerfile
@@ -311,6 +316,7 @@ CMD ["k8s-network-policy-viewer", "-s=true"]
 ```
 
 <aside class="notes" data-markdown>
+Multi-stage docker builds are beguilingly simple and convenient, but harder to justify when run over and over in response to trivial README changes. 
 </aside>
 
 # TOTAL COST OF HOARDING
@@ -346,7 +352,7 @@ CMD ["k8s-network-policy-viewer", "-s=true"]
 ```
 
 <aside class="notes" data-markdown>
-The cost of data storage scales linearly (allowing for bulk discount tiers), but the complexity of analysing that data grows exponentially.
+The cost of data storage scales linearly (allowing for bulk discount tiers), but the complexity of analysing that data grows exponentially. If data is the new oil, it requires each owner to invent their own method of extraction and filtering. 
 </aside>
 
 # THE VIEW FROM LE MANS
@@ -354,6 +360,7 @@ The cost of data storage scales linearly (allowing for bulk discount tiers), but
 ```render_a2sketch
       #-----------------------------------------------------------#    
       |[q]                                                        |    
+      |                                                           | 
       |                                                           | 
       |                                                           | 
       |   Program to where the performance puck is going to be,   | 
@@ -368,8 +375,10 @@ The cost of data storage scales linearly (allowing for bulk discount tiers), but
 [q]: {"a2s:type": "quote-sw", "a2s:delref": true, "fill": "#27bdce", "fillStyle": "solid"}
 ```
 
+<small>Source: D.H. Hansson. 2016. <a href="https://m.signalvnoise.com/program-to-where-the-performance-puck-is-going-to-be-not-where-it-has-been/">Signal v. Noise</a>.</small>
+
 <aside class="notes" data-markdown>
-Disclaimer: this is a very rare point of disagreement with DHH. What is more, his specific point in the blog post (the exceptional performance gains of ARM chips) is indeed remarkable. The question is what should be done with these gains considering that, like the gains predicted by Moore's Law, they cannot go on forever.
+Disclaimer: this is a very rare point of disagreement with DGG. What is more, his specific point in the blog post (the exceptional performance gains of ARM chips) is indeed remarkable. The question is what should be done with these gains considering that, like the gains predicted by Moore's Law, they cannot go on forever.
 </aside>
 
 # THE MISSING THREE PER CENT
@@ -379,11 +388,12 @@ Disclaimer: this is a very rare point of disagreement with DHH. What is more, hi
 |[q]                                                        |    
 |                                                           | 
 |                                                           | 
+|                                                           | 
 |       We should forget about small efficiencies,          | 
 |       say about 97% of the time:                          |                          
 |       premature optimization is the root of all evil      |
 |                                                           |    
-|                                  - Donald Knuth (?)       | 
+|                                  - Donald Knuth           | 
 |                                                           | 
 |                                                           | 
 |                                                           | 
@@ -393,35 +403,39 @@ Disclaimer: this is a very rare point of disagreement with DHH. What is more, hi
 
 ```
 
+<small>Source: D. Knuth. 1974. &ldquo;Turing Award Lecture.&rdquo; <em>Comm. ACM</em> 17 (1974), p. 671.</small>
+
 <aside class="notes" data-markdown>
+In fairness, Knuth goes on to stress 'that critical 3%', but that part is rarely emphasised.
 </aside>
 
-# CONVEX DISTRIBUTION
+# ASYMMETRY
 
 ```render_a2sketch
-.---------------------------------------.    
-|[c]                                    |    
-| gains                                 |    
-|                                       |
-|                                       |
-|                                       |
-|                                       |
-|                                       |
-|                                       |
-|                                       |    
-|                             variable x|    
-|                                       |    
-|                                       |    
-|                                       |    
-| losses                                |    
-|                                       | 
-'---------------------------------------'    
+      .---------------------------------------.    
+ gains|[c]                                    |    
+      |                                       |    
+      |                                       |
+      |                                       |
+      |                                       |
+      |                                       |
+      |                                       |
+      |                                       |
+      |                                       |    
+      |                             variable x|    
+      |                                       |    
+      |                                       |    
+      |                                       |    
+      |                                       |    
+losses|                                       | 
+      '---------------------------------------'    
 
 [c]: {"a2s:type": "convex", "a2s:delref": true, "fill": "#fff", "fillStyle": "solid"}
 ```
 <small>Adapted from N.N. Taleb. 2012. <em>Antifragile</em>. NY: Random House, p. 273.</small>
 
 <aside class="notes" data-markdown>
+Taleb's 'convex' distribution is much less pronounced than this one, but the principle holds.
 </aside>
 
 # MANDELBROT {bg=#fff44d}
@@ -582,9 +596,7 @@ Disclaimer: this is a very rare point of disagreement with DHH. What is more, hi
 # THANK YOU {bgcss=tw-colorful .light-on-dark}
 
 <small>Slides built with <a href="https://github.com/arnehilmann/markdeck">Markdeck</a><br/>
-Based on <a href="https://revealjs.com/#/">reveal.js</a>, <a href="https://github.com/astefanutti/decktape">decktape</a>, <a href="https://github.com/dhobsd/asciitosvg">a2s</a>, <a href="https://github.com/arnehilmann/a2sketch">a2sketch</a>, <a href="https://vega.github.io/vega-lite/">Vega-Lite</a> and <a href="https://asciinema.org/">Asciinema</a> among others<br/>
-The fonts are <a href="https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans">OpenSans</a> and <a href="https://github.com/ipython/xkcd-font">xkcd-script</a><br/>
-<a href="https://github.com/gerald1248/bottomless-datacentre-slides">github.com/gerald1248/bottomless-datacentre-slides</a></small>
+Fork on GitHub: <a href="https://github.com/gerald1248/bottomless-datacentre-slides">gerald1248/bottomless-datacentre-slides</a></small>
 <br/><br/>
 <img src="assets/images/ThoughtWorks_logo_white.png" alt="ThoughtWorks logo" width="25%"/>
 
