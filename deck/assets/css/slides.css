@@ -124,3 +124,9 @@ pre.asciinema-terminal {
 i.fa {
   font-family: FontAwesome;
   font-style: normal; }
+
+.reveal .tiny {
+  display: inline-block;
+  font-size: 0.4em;
+  line-height: 0.8em;
+  vertical-align: top; }
