@@ -220,7 +220,7 @@ $\text{PUE}=\frac{\text{Watts in}}{\text{IT watts}}$
 }
 ```
 
-<div class="tiny">Power usage effectiveness data by [Google Data Centers](https://www.google.co.uk/about/datacenters/efficiency/internal/)</div>
+<div class="tiny">Power usage effectiveness data by [Google Data Centers](https://www.google.co.uk/about/datacenters/efficiency/internal/).</div>
 
 <aside class="notes" data-markdown>
 The power usage effectiveness of these datacentres is nothing short of miraculous, but we mustn't overlook the fact that the actual amount of work done does not come into it. We could be mining Bitcoin at unsustainable financial and environmental cost and still boost a datacentre's PUE indicator. 
@@ -504,7 +504,7 @@ Taleb's 'convex' distribution is much less pronounced than this one, but the pri
 }
 ```
 
-<div class="tiny">Source: [benchmarksgame-team.pages.debian.net](https://benchmarksgame-team.pages.debian.net/benchmarksgame/performance/mandelbrot.html)</div>
+<div class="tiny">Source: [benchmarksgame-team.pages.debian.net](https://benchmarksgame-team.pages.debian.net/benchmarksgame/performance/mandelbrot.html).</div>
 
 <aside class="notes" data-markdown>
 The key point to make here is less the specific spread of results but the variation between benchmarks. Golang, for example, scores poorly when binary trees are involved.
