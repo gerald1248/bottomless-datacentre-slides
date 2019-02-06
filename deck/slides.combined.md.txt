@@ -9,6 +9,8 @@ asciinema: true
 center: true
 ---
 
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
 # THE BOTTOMLESS DATACENTRE {bgcss=tw-colorful .light-on-dark}
 
 ```render_a2sketch
@@ -432,6 +434,7 @@ losses|                                       |
 
 [c]: {"a2s:type": "convex", "a2s:delref": true, "fill": "#fff", "fillStyle": "solid"}
 ```
+
 <small>Adapted from N.N. Taleb. 2012. <em>Antifragile</em>. NY: Random House, p. 273.</small>
 
 <aside class="notes" data-markdown>
@@ -504,6 +507,7 @@ Taleb's 'convex' distribution is much less pronounced than this one, but the pri
 <small>Source: [benchmarksgame](https://benchmarksgame-team.pages.debian.net/benchmarksgame/performance/mandelbrot.html)</small>
 
 <aside class="notes" data-markdown>
+The key point to make here is less the specific spread of results but the variation between benchmarks. Golang, for example, scores poorly when binary trees are involved.
 </aside>
 
 # MOBILE 
@@ -526,6 +530,7 @@ Taleb's 'convex' distribution is much less pronounced than this one, but the pri
 ```
 
 <aside class="notes" data-markdown>
+Extending battery life is only one possible use of performance improvements. They represent design capital that can be spent on thinner and lighter devices, longer battery life or simply snappier response times.
 </aside>
 
 # EMBEDDED
@@ -548,6 +553,7 @@ Taleb's 'convex' distribution is much less pronounced than this one, but the pri
 ```
 
 <aside class="notes" data-markdown>
+If we consider electronics in the built environment (sensors in walls etc.), this capital can help make devices disappear from view or remain active weeks or months longer before losing power.
 </aside>
 
 # PAY FOR WHAT YOU USE
@@ -568,6 +574,7 @@ Taleb's 'convex' distribution is much less pronounced than this one, but the pri
 ```
 
 <aside class="notes" data-markdown>
+This is surely the killer argument. Ideally code that runs twice as fast will cost half as much to run. That was not at all apparent in on-premises datacentres; still not abundantly clear when using virtual machines and later containers; but it is immediately apparent when in the serverless model.
 </aside>
 
 # MAXIMISE THE WORK NOT DONE {bg=#6a2469 .light-on-dark}
@@ -584,6 +591,9 @@ Taleb's 'convex' distribution is much less pronounced than this one, but the pri
     |                                   |    
     |                                   |    
     |                                   |    
+    |                                   |    
+    |                                   |    
+    |                                   |    
     |                                   | 
     #-----------------------------------#    
 
@@ -591,15 +601,19 @@ Taleb's 'convex' distribution is much less pronounced than this one, but the pri
 ```
 
 <aside class="notes" data-markdown>
+The single most powerful optimisation is choosing to do less. Faced with virtually limitless compute capacity on a planet offering finite resources, this remains as good a recommendation as any.
 </aside>
 
 # THANK YOU {bgcss=tw-colorful .light-on-dark}
 
 <small>Slides built with <a href="https://github.com/arnehilmann/markdeck">Markdeck</a><br/>
-Fork on GitHub: <a href="https://github.com/gerald1248/bottomless-datacentre-slides">gerald1248/bottomless-datacentre-slides</a></small>
-<br/><br/>
+<i class="fa fa-github" aria-hidden="true"></i> <a href="https://github.com/gerald1248/bottomless-datacentre-slides">gerald1248/bottomless-datacentre-slides</a><br/>
+<i class="fa fa-twitter" aria-hidden="true"></i> 03spirit</small>
+
+
 <img src="assets/images/ThoughtWorks_logo_white.png" alt="ThoughtWorks logo" width="25%"/>
 
 <aside class="notes" data-markdown>
+
 </aside>
 

@@ -120,3 +120,7 @@ pre.asciinema-terminal {
   left: 20px;
   top: 120px;
   text-align: left; }
+
+i.fa {
+  font-family: FontAwesome;
+  font-style: normal; }
