@@ -324,31 +324,30 @@ Multi-stage docker builds are beguilingly simple and convenient, but harder to j
 # TOTAL COST OF HOARDING
 
 ```render_a2sketch
-                               
-                              ^ Jackpot
-                              |
-                                    
-       #-------------------------------------------.    
-   cost|[c]                   compute              |    
-       |                                           |    
-       |                                           |
-       |                                           |
-       |                                           |
-       |                                           |
-       |                                           |
-       |                                           |
-       |                                           |
-       |                                   storage |
-       |                                           |
-       |                                           |    
-       |                                           |    
-       |                                           |    
-       |                                           |    
-       |                                           |    
-       |                                           |    
-       |                                           | 
-       '-------------------------------------------#    
-                                               data    
+
+     ^                         
+     |#-------------------------------------------.
+ cost||[c]                   compute              |
+     ||                                           |
+     ||                                           |
+     ||                                           |
+     ||                                           |
+     ||                                           |
+     ||                                           |
+     ||                                           |
+     ||                                           |
+     ||                                   storage |
+     ||                                           |
+     ||                                           |
+     ||                                           |
+     ||                                           |
+     ||                                           |
+     ||                                           |
+     ||                                           |
+     ||                                           |
+     |#-------------------------------------------#
+     #---------------------------------------------->
+                                               data
 
 [c]: {"a2s:type": "data", "a2s:delref": true, "fill": "#fff", "fillStyle": "solid"}
 ```
@@ -414,23 +413,25 @@ In fairness, Knuth goes on to stress 'that critical 3%', but that part is rarely
 # ASYMMETRY
 
 ```render_a2sketch
-      .---------------------------------------.    
- gains|[c]                                    |    
-      |                                       |    
-      |                                       |
-      |                                       |
-      |                                       |
-      |                                       |
-      |                                       |
-      |                                       |
-      |                                       |    
-      |                             variable x|    
-      |                                       |    
-      |                                       |    
-      |                                       |    
-      |                                       |    
-losses|                                       | 
-      '---------------------------------------'    
+       ^
+       |.---------------------------------------.    
+ gains ||[c]                                    |    
+       ||                                       |    
+       ||                                       |
+       ||                                       |
+       ||                                       |
+       ||                                       |
+       ||                                       |
+       #|                                       #->
+       ||                                       |    
+       ||                             variable x|    
+       ||                                       |    
+       ||                                       |    
+       ||                                       |    
+       ||                                       |    
+losses ||                                       | 
+       |'---------------------------------------'    
+       v
 
 [c]: {"a2s:type": "convex", "a2s:delref": true, "fill": "#fff", "fillStyle": "solid"}
 ```
@@ -440,6 +441,30 @@ losses|                                       |
 <aside class="notes" data-markdown>
 Taleb's 'convex' distribution is much less pronounced than this one, but the principle holds.
 </aside>
+
+# LENSING {bg=#6a2469 .light-on-dark}
+
+```render_a2sketch
+ | | | | | | | |
+.#-#-#-#-#-#-#-#.
+|[w]            |
+|         NVIDIA|
+'#-#-#-#-#-#-#-#'
+ | | | | | | | |
+
+[w]: {"a2s:delref": true, "stroke": "#fff", "fill": "#fff", "fillStyle": "solid"}
+```
+
+```c++
+qcl::environment env;
+
+const cl::Platform& platform =
+  env.get_platform_by_preference({"NVIDIA", "AMD", "Intel"});
+qcl::global_context_ptr global_ctx =
+  env.create_global_context(platform, CL_DEVICE_TYPE_GPU);
+```
+
+<div class="tiny">Source: A. Alpay. 2018. [github.com/illuhad/teralens](https://github.com/illuhad/teralens). Publication forthcoming.</div>
 
 # MANDELBROT {bg=#fff44d}
 
@@ -584,6 +609,13 @@ Ideally code that runs twice as fast will cost half as much to run. That was not
     |[g]                                |    
     |                                   |    
     |                                   |
+    |                                   |    
+    |                                   |    
+    |                                   |    
+    |                                   |    
+    |                                   |    
+    |                                   |    
+    |                                   |    
     |                                   |    
     |                                   |    
     |                                   |    
