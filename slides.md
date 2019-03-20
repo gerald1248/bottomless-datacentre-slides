@@ -445,14 +445,17 @@ Taleb's 'convex' distribution is much less pronounced than this one, but the pri
 # LENSING {bg=#6a2469 .light-on-dark}
 
 ```render_a2sketch
- | | | | | | | |
-.#-#-#-#-#-#-#-#.
-|[w]            |
-|         NVIDIA|
-'#-#-#-#-#-#-#-#'
- | | | | | | | |
++-+ +-+ +-+ +-+ +-+ +-+ +-+ +-+
++ +-+ +-+ +-+ +-+ +-+ +-+ +-+ +
+|                             |
+|                             |
+|                      NVIDIA |
+|                             |
+|                             |
++ +-+ +-+ +-+ +-+ +-+ +-+ +-+ +
++-+ +-+ +-+ +-+ +-+ +-+ +-+ +-+
 
-[w]: {"a2s:delref": true, "stroke": "#fff", "fill": "#fff", "fillStyle": "solid"}
+[1,1]: {"stroke": "#fff", "fill": "#fff", "fillStyle": "solid"}
 ```
 
 ```c++
@@ -465,6 +468,12 @@ qcl::global_context_ptr global_ctx =
 ```
 
 <div class="tiny">Source: A. Alpay. 2018. [github.com/illuhad/teralens](https://github.com/illuhad/teralens). Publication forthcoming.</div>
+
+# ENCODING
+
+<img src="assets/images/rossipedia-status.jpg" alt="CPU and memory utilisation before and after switch to Rustlang"/>
+
+<div class="tiny">Source: [twitter.com/rossipedia/status/1101266107178967040](https://twitter.com/rossipedia/status/1101266107178967040).</div>
 
 # MANDELBROT {bg=#fff44d}
 
