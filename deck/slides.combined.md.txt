@@ -169,7 +169,7 @@ Here is a better description of cloud datacentres. Miles of cables pin these for
 }
 ```
 
-<div class="tiny">Region data based on the <a href="http://feeds.feedburner.com/AmazonWebServicesBlog">AWS</a>, <a href="https://cloudblog.withgoogle.com/products/gcp/rss/">GCP</a> and <a href="https://azurecomcdn.azureedge.net/en-gb/blog/feed/">Azure</a> blogs.<br/>Some missing data points interpolated.</div>
+<div class="tiny">Region data based on the <a href="http://feeds.feedburner.com/AmazonWebServicesBlog">AWS</a>, <a href="https://cloudblog.withgoogle.com/products/gcp/rss/">GCP</a> and <a href="https://azurecomcdn.azureedge.net/en-gb/blog/feed/">Azure</a> blogs. Some missing data points interpolated.</div>
 
 <aside class="notes" data-markdown>
 Note that the growth of AWS is in no way hindered by the rapid rise of Microsoft Azure and Google Compute Cloud. See especially AWS's explosive growth in the period 2015—2016.
@@ -460,11 +460,11 @@ Taleb's 'convex' distribution is much less pronounced than this one, but the pri
 
 ```c++
 qcl::environment env;
-
 const cl::Platform& platform =
   env.get_platform_by_preference({"NVIDIA", "AMD", "Intel"});
 qcl::global_context_ptr global_ctx =
   env.create_global_context(platform, CL_DEVICE_TYPE_GPU);
+
 ```
 
 <div class="tiny">Source: A. Alpay. 2018. [github.com/illuhad/teralens](https://github.com/illuhad/teralens). Publication forthcoming.</div>
