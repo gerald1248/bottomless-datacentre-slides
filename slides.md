@@ -627,14 +627,6 @@ Ideally code that runs twice as fast will cost half as much to run. That was not
     |                                   |    
     |                                   |    
     |                                   |    
-    |                                   |    
-    |                                   |    
-    |                                   |    
-    |                                   |    
-    |                                   |    
-    |                                   |    
-    |                                   |    
-    |                                   |    
     |                                   | 
     #-----------------------------------#    
 
@@ -645,7 +637,7 @@ Ideally code that runs twice as fast will cost half as much to run. That was not
 The single most powerful optimisation is choosing to do less. Faced with virtually limitless compute capacity on a planet offering finite resources, this remains as good a recommendation as any.
 </aside>
 
-# THANK YOU {bgcss=tw-colorful .light-on-dark}
+# <small>THANK YOU</small> {bgcss=tw-colorful .light-on-dark}
 
 <small>Slides built with <a href="https://github.com/arnehilmann/markdeck">Markdeck</a><br/>
 <i class="fa fa-github" aria-hidden="true"></i> <a href="https://github.com/gerald1248/bottomless-datacentre-slides">gerald1248/bottomless-datacentre-slides</a><br/>
